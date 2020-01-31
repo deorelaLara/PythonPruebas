@@ -21,12 +21,6 @@ def contarLineas(archivo = 'test.txt'):
     local.close()
 
 def main():
-    # Prueba #1
-    # contarLineas()
-    # Prueba #2
-    # print('Este es     un   ejemplo'.split())
-    # Prueba #3
-    # contarPalabras()
     contarPalabras()
     contarLineas()
 
