@@ -29,4 +29,4 @@ class Jikan(BiblioAnime):
 
 if __name__ == "__main__":
     biblio = Jikan("https://api.jikan.moe/v3/anime")
-    print(getAnime("5114", biblio))
+    print(getAnime("1535", biblio))
