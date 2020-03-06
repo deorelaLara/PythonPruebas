@@ -1,6 +1,7 @@
 from abc import ABC, abstractclassmethod
 import requests
 
+
 class Anime():
     def __init__(self, title, episodes, desc):
         self.Title = title
