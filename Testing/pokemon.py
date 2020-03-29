@@ -28,4 +28,4 @@ class Poke(Pokedex):
 if __name__ == "__main__":
     #id = input('No Pokedex: ')
     pokemon = Poke('https://pokeapi.co/api/v2/pokemon-form')
-    print(getPokemon(25, pokemon))
+    print(getPokemon(400, pokemon))
