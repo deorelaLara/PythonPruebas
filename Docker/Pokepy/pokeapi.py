@@ -18,5 +18,5 @@ class PokeAPI(object):
         }
 
 
-# api = PokeAPI()
-# print(json.dumps(api.getPokemon(randrange(10)), indent=2))
+api = PokeAPI()
+print(json.dumps(api.getPokemon(randrange(10)), indent=2))
