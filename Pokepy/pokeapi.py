@@ -4,8 +4,8 @@ from random import randrange
 
 class PokeAPI(object):
     def __init__(self):
-        self.ENDPOINT = 'https://pokeapi.co/api/v2/pokemon-form'
-        #'https://pokeapi.co/api/v2/pokemon'
+        #self.ENDPOINT = 'https://pokeapi.co/api/v2/pokemon-form'
+        self.ENDPOINT='https://pokeapi.co/api/v2/pokemon'
 
     def getPokemon(self, x):
         uri = f'{self.ENDPOINT}/{x}'
@@ -14,8 +14,12 @@ class PokeAPI(object):
 
         return {
             'name': data.get('name'),
-            'image': data.get('sprites', {}).get('front_default'),
+            'id' : data.get('id'),
+            'base_experience' : data.get('base_experience'),
+            'weight': data.get('weight'),
+            'type': data.get('species', {}).get('url'),
+            'image': data.get('sprites', {}).get('front_default')
         }
 
 api = PokeAPI()
-print(json.dumps(api.getPokemon((400)), indent=2))
+print(json.dumps(api.getPokemon((25)), indent=2))
